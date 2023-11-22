@@ -2,6 +2,10 @@ package com.example.cardmotive;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +19,8 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 
 public class Adapter extends ArrayAdapter <Card> {
+
+    int count = 0;
 
     ArrayList <Card> cardArrayList;
     Context context;
@@ -47,7 +53,8 @@ public class Adapter extends ArrayAdapter <Card> {
         viewholder.textView.setText(card.getText());
         viewholder.imageView.setImageResource(card.getBgID());
 
+
         return convertView;
     }
-
+    
 }

@@ -24,4 +24,5 @@ public class Card {
     public void setBgID(int bgID) {
         this.bgID = bgID;
     }
+
 }
